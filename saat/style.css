@@ -20,7 +20,7 @@ body{
     justify-content: center;
     position: absolute;
     margin: auto;
-    font-size: 70px;
+    font-size: 200px;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
