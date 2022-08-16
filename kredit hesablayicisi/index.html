@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kredit hesablama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hesablama mərkəzi</h1>
+        <div class="all">
+            <div class="Qiymət">
+                <label for="qiymet">
+                 Məhsulun Qiyməti
+                 <br>
+                 <br>
+                 <input id="amount" type="number" onchange="kredit()"">   
+                </label>
+            </div>
+            <div class="ay">
+                <label for="ay">
+                    Ay
+                    <br>
+                    <br>
+                    <input id="month" type="number" onchange="kredit()"">   
+                   </label>
+            </div>
+            <div class="Faiz">
+                <label for="faiz">
+                    Faiz
+                    <br>
+                    <br>
+                    <input id="interest" type="number"  onchange="kredit()"">   
+                   </label>
+            </div>
+            <div class="btns">
+                <div class="btn a">
+                    <a href="#" onclick="kredit()">Hesabla</a>
+                </div>
+                <div class="btn b">
+                    <a href="#" onclick="sil()">Təmizlə</a>
+                </div>
+            </div>    
+        </div>
+        <div class="pay" id="det">
+            <h2></h2>
+            <h1 id="payment"></h1>
+            <h1 id="totalpayment"></h1>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
